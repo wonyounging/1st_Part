@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>nufyn 회사 설문조사</title>
+</head>
+<body>
+    <h1><b>nufyn 회사 설문조사</b></h1>
+    <label for="name">이름 : </label>
+    <input type="text" id="name" placeholder="이름을 반드시 입력해주세요"> 
+    <br>
+    <label for="addr">주소 : </label>
+    <input type="text" id="addr" value="대구 달서구">
+    <br>
+    <label for="work">회사 : </label>
+    <input type="text" id="work" value= "nufyn 회사" readonly>
+    <br>
+    <label for="sex">성별 : </label>
+    <input type="radio" name="s" id="sex1" value="male">
+    <label for="sex1">남</label>
+    <input type="radio" name="s" id="sex2" value="female">
+    <label for="sex2">여</label>
+    <br>
+    <label>전화번호 앞자리 : </label>
+    <input type="radio" name="pf" id="" value="기타">기타
+    <input type="radio" name="pf" id="" value="010">010
+    <br>
+    <label>좋아하는 애완 동물은? : </label>
+    <input type="checkbox" name="ani" name="dog">개
+    <input type="checkbox" name="ani" name="cat">고양이
+    <input type="checkbox" name="ani" name="sna">뱀
+    <input type="checkbox" name="ani" name="ant">개미
+    <br>
+    <label for="u_id">ID : </label>
+    <input type="text" id="u_id" placeholder="아이디">
+    <br>
+    <label for="u_pw">PW : </label>
+    <input type="password" id="u_pw" placeholder="패스워드">
+    <br>
+    <select name="" id="" multiple size="3">
+        <option value="010">010</option>
+        <option value="016">016</option>
+        <option value="017">017</option>
+    </select>
+    <br>
+    <textarea name="g" id="" cols="40" rows="5">
+
+    </textarea>  
+    <br>
+    <input type="submit" value="보내기">
+</body>
+</html>

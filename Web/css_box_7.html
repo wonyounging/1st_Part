@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS_box_7</title>
+    <style>
+     #circle{
+        border-radius: 50%;
+     }
+     #rbox{
+        width: 200px;
+        height: 100px;
+        margin: 15px;
+        border-style: solid;
+        border-color: blue;
+        border-radius: 10px 10px 0px 0px;
+     }
+     #rbox1{
+        width: 200px;
+        height: 100px;
+        margin: 15px;
+        border-style: solid;
+        border-color: black;
+        background-color: gold;
+        border-radius: 30px;
+        display: inline-block;
+     }
+     #rbox2{
+        width: 200px;
+        height: 100px;
+        margin: 15px;
+        border-style: solid;
+        border-color: black;
+        background-color: gold;
+        /* border-radius: 0px 0px 40px 0px; */
+        border-bottom-right-radius: 40px;
+        display: inline-block;
+     }
+     #rbox3{
+        width: 200px;
+        height: 100px;
+        margin: 15px;
+        border-style: solid;
+        border-color: black;
+        background-color: gold;
+        border-radius: 40px 0px 0px 0px;
+        display: inline-block;
+     }
+     #rbox4{
+        width: 200px;
+        height: 100px;
+        margin: 15px;
+        border-style: solid;
+        border-color: black;
+        background-color: gold;
+        border-radius: 0px 0px 0px 40px;
+        display: inline-block;
+     }
+
+    </style>
+</head>
+<body>
+    <img src="imges/photo.jpg">
+    <img id="circle" src="imges/photo.jpg">
+    <div id="rbox"></div>
+    
+    <div id="rbox1"></div>
+    <div id="rbox2"></div>
+    <div id="rbox3"></div>
+    <div id="rbox4"></div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+#container{
+    width: 800px; margin: 0px auto;
+}
+
+table, th, td{
+    border : 1px solid #c222;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+}

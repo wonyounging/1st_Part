@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트 리스너</title>
+    <style>
+        #container{
+            width: 300px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="imges/easys-1.jpg" id="cover">
+    </div>
+    
+    <script>
+        // 이벤트 리스너 사용안한 경우
+        // var cover = document.getElementById("cover");
+        // function changePic(){
+        //     cover.src = "imges/easys-2.jpg";
+        // }
+        // function originPic(){
+        //     cover.src = "imges/easys-1.jpg";
+        // }
+
+        // 이벤트 리스너를 사용한 경우
+        var cover = document.getElementById("cover");
+        cover.addEventListener("mouseover", changePic, false);
+        cover.addEventListener("mouseleave", originPic, false);
+        function changePic(){
+            cover.src = "imges/easys-2.jpg";
+        }
+        function originPic(){
+            cover.src = "imges/easys-1.jpg";
+        }
+
+        // 익명함수로 사용
+        // cover.addEventListener("mouseover", function () {cover.src = "imges/easys-2.jpg";}, false);
+        // cover.addEventListener("mouseleave", function () {cover.src = "imges/easys-1.jpg";}, false);
+    </script>
+</body>
+</html>

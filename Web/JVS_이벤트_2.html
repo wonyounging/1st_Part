@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트</title>
+    <link rel="stylesheet" href="css/function.css">
+</head>
+<body>
+    <button id = "change" onclick="">글자색 바꾸기</button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere laborum aliquam. In rem ad asperiores! Non provident nisi in, ipsa, fugiat a fugit vero voluptatibus, quidem temporibus sequi libero!
+    </p>
+    <script>
+       // 방법 1 : 웹 요소를 변수로 지정 & 미리 만든 함수 사용
+    //    var changeBtn = document.querySelector("#change");
+    //    changeBtn.onclick = changeColor;
+
+    //    function changeColor() {
+    //     document.querySelector('p').style.color = "#f00";
+    //    }
+
+       // 방법 2 : 웹 요소를 따로 변수로 만들지 않고 사용
+    //    document.querySelector("#change").onclick = changeColor;
+    //    function changeColor() {
+    //     document.querySelector('p').style.color = "#f00"
+    //    }
+
+       // 방법 3 : 함수를 직접 선언
+        document.querySelector("#change").onclick = function changeColor() {
+        document.querySelector('p').style.color = "#f00"
+       }
+
+    </script>
+    
+</body>
+</html>

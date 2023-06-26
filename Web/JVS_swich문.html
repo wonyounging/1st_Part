@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 swich문</title>
+</head>
+<!-- <body>
+    <script>
+        const input = Number(prompt("숫자를 입력하세요", "숫자"));
+        switch(input % 2){
+            case 0:
+                alert("짝수입니다.")
+                break
+            case 1:
+                alert("홀수입니다.")
+                break
+            default:
+                alert("정수를 입력하세요.")
+                break
+        }
+    </script>
+</body> -->
+
+
+<body>
+    <script>
+        const input = Number(prompt("숫자를 입력하세요", "숫자"));
+        if (input !== 0){
+            switch(input % 2){
+            case 0:
+                alert("짝수입니다.")
+                break
+            case 1:
+                alert("홀수입니다.")
+                break
+            default:
+                alert("정수를 입력하세요.")
+                break
+           }
+        } 
+        else{
+            alert('0 또는 숫자아님')
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>생성순서</title>
+    <script>alert('header')</script>
+</head>
+<body>
+    <h1>header 1</h1>
+    <script>alert('header 1')</script>
+    <h3>header3</h3>
+    <script>alert('header 3')</script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>생성순서 오류</title>
+    <script>
+        // document.querySelector('h1').style.backgroundColor = 'yellow';
+        // document.querySelector('h2').style.backgroundColor = 'red';
+        function handler(){
+            document.querySelector('h1').style.backgroundColor = 'yellow';
+            document.querySelector('h2').style.backgroundColor = 'red';
+        }
+    </script>
+</head>
+<body onload="handler()">
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <!-- <script>
+        document.querySelector('h1').style.backgroundColor = 'yellow';
+        document.querySelector('h2').style.backgroundColor = 'red';
+    </script> -->
+        
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>class 객체</title>
+</head>
+<body>
+    <script>
+        // 클래스 사용해 객체 찍어내기
+        class product{
+            constructor (name, price){
+                this.name = name;
+                this.price = price;
+            }
+            print(){
+                console.log(`${this.name}의 가격은 ${this.price}원입니다.`)
+            }
+        }
+        const apple = new product('사과', 1500);
+        const grape = new product('포도', 3000);
+        const fruits = [apple, grape];
+
+        for(let fruit of fruits)
+            fruit.print();
+
+    // 상속
+    class Fruit extends product{
+        constructor(name, price, color){
+            super(name, price);
+            this.color = color;
+        }
+        print(){
+            super.print();
+            console.log(`색깔은 ${this.color}입니다.`);
+        }
+    }
+    const banana = new Fruit('바나나', 2000, '노란색');
+    banana.print();
+    </script>
+    
+</body>
+</html>

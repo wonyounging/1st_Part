@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 다중 if문</title>
+</head>
+<body>
+    <script>
+       const date = new Date();
+       const hour = date.getHours();
+
+       if(hour < 11){
+            alert("아침 먹을 시간")
+       }
+       else if(hour < 15){
+            alert('점심 먹을 시간')
+       }
+       else{
+            alert('저녁 먹을 시간')
+       }
+    </script>
+</body>
+</html>

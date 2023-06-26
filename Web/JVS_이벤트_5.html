@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        // function JV_Change(){
+        //     document.querySelector("#header").innerHTML = "자바스크립트로 변경<br>원래는 Header 1이였습니다.";
+        // }
+        // function ES_Change(){
+        //     document.querySelector("#header").innerHTML = "i 태그입니다.<br>&lt;i&gt;i 태그입니다.&lt;/i&gt";
+        // }
+        function JV_Change(){
+            const header = document.getElementById('header');
+            const originalText = header.innerHTML;
+            header.innerHTML = '자바스크립트로 변경<br>';
+            header.innerHTML += `원래는 "${originalText}"이었습니다.`;
+        }
+        function ES_Change(){
+            const header1 = document.getElementById('header');
+            header1.innerHTML = "<i> i 태그입니다.</i><br>";
+            header.innerHTML += `n&lt;i&gt;i 태그입니다.&lt;/i&gt`;
+            
+            
+        }
+    </script>
+</head>
+<body style="margin: 40px">
+    <h1 id="header">Header 1</h1>
+    <button onclick="JV_Change()">문자변경</button>   
+    <button onclick="ES_Change()">Escape문자</button>   
+</body>
+</html>

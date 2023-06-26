@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>브라우저 관련 객체</title>
+</head>
+<body>
+    <p>문서를 열면 팝업창이 표시됩니다.</p>
+    <script>
+        function openCenter(doc, win, w, h){
+            var left = (screen.availWidth - w) / 2
+            var top = (screen.availHeight - h) / 2
+            var opt = "left = "+ left + ", top = " + top + ", width = " + w + ", height = " + h;
+            window.open(doc, win, opt)
+        }
+        // window.open("popup.html", "notice", "width=500, height=400");
+        openCenter("popup.html", "pop", 500, 400)
+    </script>
+</body>
+</html>

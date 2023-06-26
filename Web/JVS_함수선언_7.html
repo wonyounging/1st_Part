@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>forEach, map, filter함수</title>
+</head>
+<body>
+    <script>
+        //forEach()
+        // const numbers = [273, 52, 103, 57]
+
+        // numbers.forEach(function(value, index, array) {
+        //     console.log(`${index}번째 요소 : ${value}`)
+        // })
+
+        //map()
+        // let numbers = [273, 52, 103, 57]
+        // numbers = numbers.map(function(value, index, array) {
+        //     return value * value
+        // })
+        // numbers.forEach(console.log)
+
+        //filter() _true만 모아서 새로운 배열을 만듬
+        const numbers = [0, 1, 2, 3, 4, 5]
+        const evenNumber = numbers.filter(function(value){
+            return value % 2 == 0
+        })
+        console.log(`원래배열 : ${numbers}`);
+        console.log(`짝수배열 : ${evenNumber}`);
+    </script>
+</body>
+</html>

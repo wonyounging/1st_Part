@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>함수선언_3</title>
+</head>
+<body>
+    <input type="text" id="num" placeholder="정수 값을 넣으세요">
+    <button onclick="even_odd()">확인</button>
+    <br>
+    <p id="result"></p>
+    <script>
+        function even_odd(){
+            const numTag = document.getElementById('num');
+            const numStr = numTag.value;
+            const num = Number(numStr);
+            const resTag = document.getElementById('result')
+            if(num % 2 == 0){
+                resTag.innerHTML = "<h4>짝수입니다.</h4>"
+            }
+            else{
+                resTag.innerHTML = "<h4>홀수입니다.</h4>"
+            }
+        }
+    </script>
+</body>
+
+</html>

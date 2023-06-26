@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>콜백 함수</title>
+</head>
+<body>
+    <script>
+        // ------------콜백 함수 1------------------
+        // function callTreeTime(callback) {
+        //     for (let i = 0; i < 3; i++){
+        //         callback(i)
+        //     }
+        // }
+
+        // function print(i) {
+        //     console.log(`${i+1}번째 함수 호출`)
+        // }
+        
+        // ------------콜백 함수 2------------------
+        function callTreeTime(callback) {
+            for (let i = 0; i < 3; i++){
+                callback(i)
+            }
+        }
+        callTreeTime(function (i){
+            console.log(`${i+1}번째 함수 호출`)
+        })
+
+        callTreeTime(print)
+    </script>
+</body>
+</html>
